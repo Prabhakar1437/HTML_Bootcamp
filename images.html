@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/17622430/pexels-photo-17622430/free-photo-of-tree-and-river.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" width="400px"  alt="no images">
+    <img src="./protflio.png" width="400px"  alt="no images">
+
+    <picture>
+        <source media="(min-width: 600px)" srcset="./protflio.png">
+        <source media="(min-width: 400px)" srcset="./protflio.png">
+        <img src="./protflio.png" width="400px"  alt="no images">
+
+    </picture>
+
+    <img src="mrjd.jpg" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="one()"target="" alt="" title="" href="" coords="156,26,362,36" shape="rect">
+    <area onclick="two()"target="" alt="" title="" href="" coords="207,245,321,315" shape="rect">
+</map>
+<script>
+    function one(){
+        alert("you click on one");
+    }
+    function two(){
+        alert("you click on two");
+    }
+</script>
+</body>
+</html>
